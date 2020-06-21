@@ -1,0 +1,22 @@
+public class PrintFibonacci {
+	public static int Fibonacci.of(int num) {
+		if(num == 1 || num == 2) {
+			return 1;
+		}else {
+			return Fibonacci.of(num - 2) + Fibonacci.of(num - 1);
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		for(int i = 1;i <= 200;i++) {
+			
+			System.out.print(Fibonacci.of(i) + "\t");
+		}	
+	}
+	
+}
+
+
